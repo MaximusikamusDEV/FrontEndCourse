@@ -1,10 +1,7 @@
-const addToCartButtons = document.querySelectorAll('.item__button');
-const cartTotal = document.querySelector('.cart__total');
-let total = 0;
-
-addToCartButtons.forEach(button => {
+document.querySelectorAll('.item__button').forEach(button => {
     button.addEventListener('click', () => {
+        let total = parseInt(document.querySelector('.cart__total').textContent);
         total += 1;
-        cartTotal.textContent = total;
+        document.querySelector('.cart__total').textContent = total.toString();
     })
 })
