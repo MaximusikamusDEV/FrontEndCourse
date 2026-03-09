@@ -1,0 +1,140 @@
+.item__rating{
+    display: flex;
+}
+
+.star{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.rating__stars{
+    display: inline-block;
+    position: relative;
+}
+
+.stars__empty{
+    display: flex;
+    gap: 3px;
+}
+
+.stars__full{
+    display: flex;
+    gap: 3px;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.stars__empty .star{
+    background-image: url("/icons/star-regular-full.svg");
+}
+
+.stars__full .star{
+    background-image: url("/icons/star-solid-full.svg");
+}
+
+.item__badges{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin: 10px 10px;
+    top: 0;
+    right: 0;
+}
+
+.item__badges .badge__like, .item__badges .badge__follow, .item__badges .badge__compare{
+    background-color: #B1A4A482;
+    border-radius: 50%;
+    background-size: 24px 24px;
+    background-position: center;
+    margin: 3px;
+    width: 36px;
+    height: 36px;
+}
+
+.badge__like, .badge__follow, .badge__compare, .badge__like--active, .badge__follow--active, .badge__compare--active{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background 0.3s ease;
+}
+
+.badge__like{
+    background-image: url("/icons/heart-regular-full.svg");
+}
+
+.badge__like:hover{
+    background-color: #7E747482;
+}
+
+.badge__like--active{
+    background-image: url("/icons/heart-solid-full.svg");
+}
+
+.badge__like--active:hover{
+    background-color: #7E747482;
+}
+
+.badge__follow{
+    background-image: url("/icons/eye-regular-full.svg");
+}
+
+.badge__follow:hover{
+    background-color: #7E747482;
+}
+
+.badge__follow--active{
+    background-image: url("/icons/eye-solid-full.svg");
+}
+
+.badge__follow--active:hover{
+    background-color: #7E747482;
+}
+
+.badge__compare{
+    background-image: url("/icons/scale-unbalanced-solid-full.svg");
+}
+
+.badge__compare:hover{
+    background-color: #7E747482;
+}
+
+.badge__compare--active{
+    background-image: url("/icons/scale-unbalanced-flip-solid-full.svg");
+}
+
+.badge__compare--active:hover{
+    background-color: #7E747482;
+}
+
+.header__cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.cart__icon{
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/icons/cart-arrow-down-solid-full.svg");
+}
+
+.button__icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/icons/bag-shopping-solid-full.svg");
+}

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
 }
 
 main{
-    background: rgba(177, 164, 164, 0.51);
+    background: #B1A4A482;
 }
 
 .catalog__grid {
@@ -45,6 +46,7 @@ main{
     align-items: center;
     width: 100%;
     margin: 10px 0;
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -63,8 +65,7 @@ transform: translateY(-6px);
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.3s ease;
     width: 30%;
     padding: 5px;
     margin: 5px;
@@ -72,7 +73,15 @@ transform: translateY(-6px);
     cursor: pointer;
     font-size: 14px;
     text-align: center;
-    border-radius: 3%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2px;
+}
+
+.item__button:hover{
+    background: #3a6bd4;
 }
 
 .item__new{
@@ -152,12 +161,6 @@ transform: translateY(-6px);
     padding: 4px;
     gap: 8px;
 }
-
-.item__badges{}
-.badge__like{}
-.badge__follow{}
-.badge__compare{}
-.item__rating{}
 
 .price__current{
     font-weight: bold;
