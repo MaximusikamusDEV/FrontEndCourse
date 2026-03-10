@@ -1,17 +1,9 @@
-document.querySelectorAll('.badge__like').forEach(likeButton => {
-    likeButton.addEventListener('click', () => {
-        likeButton.classList.toggle('badge__like--active');
-    })
-})
+document.querySelector('.catalog__grid').addEventListener('click', (event) => {
+    const target = event.target;
+    const badge = target.dataset.badge;
 
-document.querySelectorAll('.badge__follow').forEach(followButton => {
-    followButton.addEventListener('click', () => {
-        followButton.classList.toggle('badge__follow--active');
-    })
-})
+    if (badge) {
+        target.classList.toggle(`badge__${badge}--active`);
+    }
+});
 
-document.querySelectorAll('.badge__compare').forEach(compareButton => {
-    compareButton.addEventListener('click', () => {
-        compareButton.classList.toggle('badge__compare--active');
-    })
-})

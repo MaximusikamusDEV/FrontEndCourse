@@ -1,7 +1,8 @@
 document.querySelectorAll('.item__button').forEach(button => {
     button.addEventListener('click', () => {
-        let total = parseInt(document.querySelector('.cart__total').textContent);
+        let cartTotal = document.querySelector('.cart__total');
+        let total = parseInt(cartTotal.textContent);
         total += 1;
-        document.querySelector('.cart__total').textContent = total.toString();
+        cartTotal.textContent = total.toString();
     })
 })
