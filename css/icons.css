@@ -93,6 +93,7 @@
 
 .badge__hidden--active{
     background-image: url("/icons/eye-solid-full.svg");
+
 }
 
 .badge__hidden--active:hover{

@@ -31,7 +31,15 @@ main{
     width: 100%;
     margin: 10px 0;
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.catalog__item--shadow{
+    opacity: 0.5;
+}
+
+.catalog__item--hidden{
+    display: none;
 }
 
 .catalog__item:hover{
