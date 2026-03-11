@@ -7,6 +7,13 @@
 
 main{
     background: #B1A4A482;
+    flex: 1;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .catalog__grid {

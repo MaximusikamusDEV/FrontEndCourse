@@ -4,5 +4,5 @@ document.querySelectorAll('.item__button').forEach(button => {
         let total = parseInt(cartTotal.textContent);
         total += 1;
         cartTotal.textContent = total.toString();
-    })
-})
+    });
+});
