@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shirts.by</title>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +17,16 @@
 <header>
     <div class="header__container">
         <h1>ESshirts.by</h1>
+        <div class="header__filters">
+            <button class="header__btn" data-button="All">All</button>
+            <button class="header__btn" data-button="Like">Favourites</button>
+            <button class="header__btn" data-button="Compare">Comparison</button>
+            <label class="header__checkbox">
+                <input class="header__check" type="checkbox">
+                <span class="header__check-box"></span>
+                <span class="header__check-label">Show hidden</span>
+            </label>
+        </div>
         <div class="header__cart">
             <div class="cart__icon"></div>
             <span class="cart__total">0</span>
@@ -24,14 +36,14 @@
 <main>
     <section class="catalog__grid">
         <!--Item 1-->
-        <article class="catalog__item item__new">
+        <article class="catalog__item item__new" data-id="1">
             <div class="item__image">
                 <img src="images/tshirt1.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -63,14 +75,14 @@
         </article>
 
         <!--Item 2-->
-        <article class="catalog__item item__new">
+        <article class="catalog__item item__new" data-id="2">
             <div class="item__image">
                 <img src="images/tshirt2.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -103,14 +115,14 @@
         </article>
 
         <!--Item 3-->
-        <article class="catalog__item item__new">
+        <article class="catalog__item item__new" data-id="3">
             <div class="item__image">
                 <img src="images/tshirt3.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -142,14 +154,14 @@
         </article>
 
         <!--Item 4-->
-        <article class="catalog__item">
+        <article class="catalog__item" data-id="4">
             <div class="item__image">
                 <img src="images/tshirt4.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -181,14 +193,14 @@
         </article>
 
         <!--Item 5-->
-        <article class="catalog__item">
+        <article class="catalog__item" data-id="5">
             <div class="item__image">
                 <img src="images/tshirt5.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -220,14 +232,14 @@
         </article>
 
         <!--Item 6-->
-        <article class="catalog__item">
+        <article class="catalog__item" data-id="6">
             <div class="item__image">
                 <img src="images/tshirt6.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -259,14 +271,14 @@
         </article>
 
         <!--Item 7-->
-        <article class="catalog__item">
+        <article class="catalog__item" data-id="7">
             <div class="item__image">
                 <img src="images/tshirt7.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -298,14 +310,14 @@
         </article>
 
         <!--Item 8-->
-        <article class="catalog__item">
+        <article class="catalog__item" data-id="8">
             <div class="item__image">
                 <img src="images/tshirt8.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -337,14 +349,14 @@
         </article>
 
         <!--Item 9-->
-        <article class="catalog__item">
+        <article class="catalog__item" data-id="9">
             <div class="item__image">
                 <img src="images/tshirt9.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -376,14 +388,14 @@
         </article>
 
         <!--Item 10-->
-        <article class="catalog__item">
+        <article class="catalog__item" data-id="10">
             <div class="item__image">
                 <img src="images/tshirt10.jpeg" alt="Catalog item image">
             </div>
             <div class="item__badges">
-                <div class="badge__like"></div>
-                <div class="badge__follow"></div>
-                <div class="badge__compare"></div>
+                <div class="badge__hidden" data-badge="hidden"></div>
+                <div class="badge__like" data-badge="like"></div>
+                <div class="badge__compare" data-badge="compare"></div>
             </div>
             <div class="item__type">T-SHIRTS</div>
             <div class="item__rating">
@@ -422,7 +434,11 @@
     </p>
 </footer>
 
-<script src="js/badges.js"></script>
-<script src="js/cart.js"></script>
+<script src="js/UpdateCatalog.js"></script>
+<script src="js/FilterButtons.js"></script>
+<script src="js/HiddenBadge.js"></script>
+<script src="js/CompareBadge.js"></script>
+<script src="js/LikeBadge.js"></script>
+<script src="js/Cart.js"></script>
 </body>
 </html>

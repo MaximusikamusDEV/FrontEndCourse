@@ -48,7 +48,7 @@
     right: 0;
 }
 
-.item__badges .badge__like, .item__badges .badge__follow, .item__badges .badge__compare{
+.item__badges .badge__like, .item__badges .badge__hidden, .item__badges .badge__compare{
     background-color: #B1A4A482;
     border-radius: 50%;
     background-size: 24px 24px;
@@ -58,7 +58,7 @@
     height: 36px;
 }
 
-.badge__like, .badge__follow, .badge__compare, .badge__like--active, .badge__follow--active, .badge__compare--active{
+.badge__like, .badge__hidden, .badge__compare, .badge__like--active, .badge__hidden--active, .badge__compare--active{
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -83,19 +83,20 @@
     background-color: #7E747482;
 }
 
-.badge__follow{
+.badge__hidden{
     background-image: url("/icons/eye-regular-full.svg");
 }
 
-.badge__follow:hover{
+.badge__hidden:hover{
     background-color: #7E747482;
 }
 
-.badge__follow--active{
+.badge__hidden--active{
     background-image: url("/icons/eye-solid-full.svg");
+
 }
 
-.badge__follow--active:hover{
+.badge__hidden--active:hover{
     background-color: #7E747482;
 }
 
