@@ -2,15 +2,6 @@
     display: flex;
 }
 
-.star{
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex-shrink: 0;
-}
-
 .rating__stars{
     display: inline-block;
     position: relative;
@@ -31,12 +22,10 @@
     left: 0;
 }
 
-.stars__empty .star{
-    background-image: url("/icons/star-regular-full.svg");
-}
-
-.stars__full .star{
-    background-image: url("/icons/star-solid-full.svg");
+.stars__empty i, .stars__full i{
+    color: #FFD43BFF;
+    font-size: 16px;
+    flex-shrink: 0;
 }
 
 .item__badges{
@@ -51,69 +40,58 @@
 .item__badges .badge__like, .item__badges .badge__hidden, .item__badges .badge__compare{
     background-color: #B1A4A482;
     border-radius: 50%;
-    background-size: 24px 24px;
-    background-position: center;
-    margin: 3px;
     width: 36px;
     height: 36px;
-}
-
-.badge__like, .badge__hidden, .badge__compare, .badge__like--active, .badge__hidden--active, .badge__compare--active{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    margin: 1px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.badge__like{
-    background-image: url("/icons/heart-regular-full.svg");
-}
-
-.badge__like:hover{
+.badge:hover{
     background-color: #7E747482;
 }
 
-.badge__like--active{
-    background-image: url("/icons/heart-solid-full.svg");
+.item__badges i{
+    font-size: 20px;
 }
 
-.badge__like--active:hover{
-    background-color: #7E747482;
+.badge .icon{
+    display: none;
 }
 
-.badge__hidden{
-    background-image: url("/icons/eye-regular-full.svg");
+.badge .icon--default{
+    display: inline;
 }
 
-.badge__hidden:hover{
-    background-color: #7E747482;
+.badge:hover .icon--default{
+    display: none;
 }
 
-.badge__hidden--active{
-    background-image: url("/icons/eye-solid-full.svg");
-
+.badge:hover .icon--hover{
+    display:inline;
 }
 
-.badge__hidden--active:hover{
-    background-color: #7E747482;
+.badge.badge--active .icon--default{
+    display: none;
 }
 
-.badge__compare{
-    background-image: url("/icons/scale-unbalanced-solid-full.svg");
+.badge.badge--active .icon--active{
+    display: inline;
 }
 
-.badge__compare:hover{
-    background-color: #7E747482;
+.badge.badge--active:hover .icon--active{
+    display: none;
 }
 
-.badge__compare--active{
-    background-image: url("/icons/scale-unbalanced-flip-solid-full.svg");
+.badge.badge--active:hover .icon--hover{
+    display: none;
 }
 
-.badge__compare--active:hover{
-    background-color: #7E747482;
+.badge.badge--active:hover .icon--active-hover{
+    display: inline;
 }
 
 .header__cart{
@@ -124,18 +102,10 @@
 }
 
 .cart__icon{
-    width: 24px;
-    height: 24px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("/icons/cart-arrow-down-solid-full.svg");
+    line-height: 1;
+    vertical-align: middle;
 }
 
-.button__icon{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("/icons/bag-shopping-solid-full.svg");
+.item__button i{
+    font-size: 18px;
 }

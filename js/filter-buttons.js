@@ -17,6 +17,6 @@ document.querySelectorAll('.header__btn').forEach(item => {
 
         activeFilter = target.dataset.button;
         target.classList.add('header__btn--active');
-        updateCatalog();
+        updateCatalog(activeFilter);
     });
 });
