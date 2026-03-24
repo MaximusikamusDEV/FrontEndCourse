@@ -7,6 +7,7 @@ header {
 
 .header__container {
     display: flex;
+    flex-direction: row;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -22,6 +23,7 @@ header {
 
 .header__filters{
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 8px;
 }
@@ -100,4 +102,18 @@ header {
 .header__check-label {
     font-size: 13px;
     white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+    .header__container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    .header__filters{
+        flex-wrap: wrap;
+        gap: 6px;
+    }
 }
