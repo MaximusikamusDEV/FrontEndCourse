@@ -6,11 +6,11 @@ function updateCatalog() {
         let visible = true;
 
         if (activeFilter === "Compare") {
-            visible = compareItemIds.has(item.dataset.id);
+            visible = compareItemIds.has(id);
         }
 
         if (activeFilter === "Like") {
-            visible = favouriteItemIds.has(item.dataset.id);
+            visible = favouriteItemIds.has(id);
         }
 
         if (isHidden && !isHiddenVisible) {
