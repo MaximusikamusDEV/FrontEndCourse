@@ -63,6 +63,11 @@ transform: translateY(-6px);
     transform: translateY(0);
 }
 
+.catalog__item:hover .item__badges{
+    opacity: 1;
+    visibility: visible;
+}
+
 .item__button{
     opacity: 0;
     visibility: hidden;

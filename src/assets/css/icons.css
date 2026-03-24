@@ -29,12 +29,15 @@
 }
 
 .item__badges{
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     position: absolute;
     flex-direction: column;
     margin: 10px 10px;
     top: 0;
     right: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .item__badges .badge--like, .item__badges .badge--hidden, .item__badges .badge--compare{
