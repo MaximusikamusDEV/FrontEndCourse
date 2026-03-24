@@ -37,7 +37,7 @@
     right: 0;
 }
 
-.item__badges .badge__like, .item__badges .badge__hidden, .item__badges .badge__compare{
+.item__badges .badge--like, .item__badges .badge--hidden, .item__badges .badge--compare{
     background-color: #B1A4A482;
     border-radius: 50%;
     width: 36px;
