@@ -5,11 +5,11 @@ function updateCatalog() {
         let isHidden = hiddenItemIds.has(id);
         let visible = true;
 
-        if (activeFilter === "Compare") {
+        if (activeFilter === Filters.COMPARE) {
             visible = compareItemIds.has(id);
         }
 
-        if (activeFilter === "Like") {
+        if (activeFilter === Filters.LIKE) {
             visible = favouriteItemIds.has(id);
         }
 
