@@ -65,7 +65,7 @@ transform: translateY(-6px);
     visibility: hidden;
     transform: translateY(10px);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.3s ease;
-    width: 30%;
+    width: 110px;
     padding: 5px;
     margin: 5px;
     background: #5e89ef;
