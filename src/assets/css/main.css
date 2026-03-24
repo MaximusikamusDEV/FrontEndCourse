@@ -28,13 +28,16 @@ body{
     gap: 20px;
 }
 
-.catalog__item {
-    border: #000 1px solid;
+.item{
     background: #fff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.catalog__item {
+    border: #000 1px solid;
     width: 100%;
     margin: 10px 0;
     position: relative;
@@ -83,11 +86,11 @@ transform: translateY(-6px);
     background: #3a6bd4;
 }
 
-.item__new{
+.item--new{
     position: relative;
 }
 
-.item__new:before{
+.item--new:before{
     content: "NEW";
     position: absolute;
     top: 8px;
