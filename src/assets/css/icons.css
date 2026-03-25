@@ -40,6 +40,13 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+@media (hover: none){
+    .item__badges{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 .item__badges .badge--like, .item__badges .badge--hidden, .item__badges .badge--compare{
     background-color: #B1A4A482;
     border-radius: 50%;

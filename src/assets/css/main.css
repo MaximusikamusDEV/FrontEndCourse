@@ -91,6 +91,28 @@ body{
     gap: 2px;
 }
 
+@media (hover: none) {
+    .item__button{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(calc(100% + 10px));
+    }
+
+    .catalog__item:hover .item__button{
+        transform: translateY(calc(100% + 10px));
+        box-shadow: none;
+    }
+
+    .catalog__item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .catalog__item{
+        margin: 0 0 40px 0;
+    }
+}
+
 .item__button:hover{
     background: #3a6bd4;
 }
