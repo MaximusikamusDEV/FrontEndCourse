@@ -1,4 +1,9 @@
-let activeFilter = 'All';
+const Filters = {
+    ALL: 'All',
+    LIKE: 'Like',
+    COMPARE: 'Compare'
+}
+let activeFilter = Filters.ALL;
 const hiddenCheckbox = document.querySelector('.header__check');
 let isHiddenVisible = hiddenCheckbox.checked;
 

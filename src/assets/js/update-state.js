@@ -3,17 +3,17 @@ function updateState() {
         const id = item.dataset.id;
 
         if (favouriteItemIds.has(id)) {
-            item.querySelector('.badge__like')
+            item.querySelector('.badge--like')
                 .classList.add('badge--active');
         }
 
         if (hiddenItemIds.has(id)) {
-            item.querySelector('.badge__hidden')
+            item.querySelector('.badge--hidden')
                 .classList.add('badge--active');
         }
 
         if (compareItemIds.has(id)) {
-            item.querySelector('.badge__compare')
+            item.querySelector('.badge--compare')
                 .classList.add('badge--active');
         }
     });
